@@ -1291,7 +1291,7 @@ work Section style
 .widget_ab_item .widget_ab_item_text,
 .widget_latst_item .widget_latst_item_text {
     display: inline-block;
-    width: 70%;
+    width: 80%;
 }
 .widget_ab_item .item_icon{
     float: left;
