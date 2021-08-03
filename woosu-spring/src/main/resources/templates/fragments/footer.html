@@ -1,42 +1,146 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<footer id ="fs_footer" th:fragment="footerFragment">
-    <link href="/css/fs_layout.css" rel="stylesheet">
-    <link href="/css/fs_main.css" rel="stylesheet">
-    <link href="/css/fs_component.css" rel="stylesheet">
-    <link href="/css/fs_content.css" rel="stylesheet">
-    <link href="/css/html5_reset.css" rel="stylesheet">
+<!--<section id="action" class="action bg-primary roomy-40">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="maine_action">-->
+<!--                <div class="col-md-8">-->
+<!--                    <div class="action_item text-center">-->
+<!--                        <h2 class="text-white text-uppercase">Your Promotion Text Will Be Here</h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-4">-->
+<!--                    <div class="action_btn text-left sm-text-center">-->
+<!--                        <a href="" class="btn btn-default">Purchase Now</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-    <div class="fs_footer_box clear">
-        <div class="foot_logo"><a href="#"><img src="#" alt="우수 AMS"/></a></div>
-        <div class="foot_menu">
-            <ul class="clear">
-                <li><a href="#">우수그룹 윤리행동 규범</a></li>
-                <li><a href="#">우수그룹 계약체결 규정</a></li>
-                <li><a href="#">우수그룹 협력업체 운영규정</a></li>
-                <li><a href="#">우수그룹 내부정보관리규정</a></li>
-            </ul>
-        </div>
-        <div class="foot_text">
-            <strong>우수AMS(주)</strong>
-            <address class="address">경상남도 창원시 성산구 월림로 62 (신촌동)<span></span><br />T: 055-274-5011~5<br /> F: 055-274-5016</address>
-        </div>
-        <div class="foot_text">
-            <strong>우수AMS(주)울산지점</strong>
-            <address class="address">울산광역시 울주군 상북면 산전후리로 40-5<span></span><br />T: 055-264-8011~5<br /> F: 055-264-8016</address>
-        </div>
-        <div class="foot_text">
-            <strong>우수정기(주)</strong>
-            <address class="address">울산광역시 울주군 상북면 산전후리로 40-5<span></span><br />T: 055-333-2211<br /> F: 055-264-8016</address>
-        </div>
-        <div class="foot_text">
-            <strong>우수AMS(주)CASCO</strong>
-            <address class="address">울산광역시 울주군 상북면 거리 1176-7<span></span><br />T: 055-264-8011~5<br /> F: 055-264-8016</address>
+<footer id="contact" class="footer action-lage bg-black p-top-80" th:fragment="footerFragment">
+    <!--<div class="action-lage"></div>-->
+    <div class="container">
+        <div class="row">
+            <div class="widget_area">
+                <div class="col-md-3">
+                    <div class="widget_item widget_about">
+                        <h5 class="text-white">우수AMS(주) 창원본사</h5>
+<!--                        <p class="m-top-20"> // </p>-->
+                        <div class="widget_ab_item m-top-30">
+                            <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
+                            <div class="widget_ab_item_text">
+                                <h6 class="text-white">오시는 길</h6>
+                                <p>경상남도 창원시 성산구 월림로 62 <br/> (신촌동)</p>
+                            </div>
+                        </div>
+                        <div class="widget_ab_item m-top-30">
+                            <div class="item_icon"><i class="fa fa-phone"></i></div>
+                            <div class="widget_ab_item_text">
+                                <h6 class="text-white">대표 전화번호</h6>
+                                <p>055-274-5011~5</p>
+                            </div>
+                        </div>
+                        <div class="widget_ab_item m-top-30">
+                            <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
+                            <div class="widget_ab_item_text">
+                                <h6 class="text-white">팩스번호</h6>
+                                <p>055-274-5016</p>
+                            </div>
+                        </div>
+                    </div><!-- End off widget item -->
+                </div><!-- End off col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="widget_item widget_latest sm-m-top-50">
+                        <h5 class="text-white">국내 계열사</h5>
+                        <div class="widget_latst_item m-top-30">
+                            <div class="widget_latst_item_text">
+                                <p>우수AMS(주) 울산지점</p>
+                                <a href="">울산광역시 울주군 상북면 산전후리로 40-5 </a> <br/>
+                                T: 052-264-8011~5 <br />
+                                F: 052-264-8016
+                            </div>
+                        </div>
+                        <div class="widget_latst_item m-top-30">
+                            <div class="widget_latst_item_text">
+                                <p>우수정기(주)</p>
+                                <a href="">울산광역시 울주군 상북면 산전후리로 40-5</a> <br/>
+                                T: 052-333-2211 <br />
+                                F: 052-264-8016
+                            </div>
+                        </div>
+                        <div class="widget_latst_item m-top-30">
+                            <div class="widget_latst_item_text">
+                                <p>우수AMS(주)CASCO</p>
+                                <a href="">울산광역시 울주군 상북면 거리 1176-7</a> <br/>
+                                T: 052-264-8011~5 <br />
+                                F: 052-864-8016
+                            </div>
+                        </div>
+                    </div><!-- End off widget item -->
+                </div><!-- End off col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="widget_item widget_service sm-m-top-50">
+                        <h5 class="text-white">Latest News</h5>
+                        <ul class="m-top-20">
+                            <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> 우수그룹 윤리행동 규범</a></li>
+                            <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> 우수그룹 계약체결 규정</a></li>
+                            <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> 우수그룹 협력업체 운용규정</a></li>
+                            <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> 우수그룹 내부정보관리규정</a></li>
+                        </ul>
+                    </div><!-- End off widget item -->
+                </div><!-- End off col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="widget_item widget_newsletter sm-m-top-50">
+                        <h5 class="text-white">Newsletter</h5>
+                        <form class="form-inline m-top-30">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter you Email">
+                                <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>
+                            </div>
+
+                        </form>
+                        <div class="widget_brand m-top-40">
+                            <a href="" class="text-uppercase">Your Logo</a>
+                            <p>Lorem ipsum dolor sit amet consec tetur
+                                adipiscing elit nulla aliquet pretium nisi in</p>
+                        </div>
+                        <ul class="list-inline m-top-20">
+                            <li>-  <a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-behance"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a>  - </li>
+                        </ul>
+
+                    </div><!-- End off widget item -->
+                </div><!-- End off col-md-3 -->
+            </div>
         </div>
     </div>
-    <span class="copyright">COPYRIGHT &copy; <em>2021 WOOSU AMS CO., LTD.</em> ALL RIGHT RESERVED.</span>
-    <a class="btn_top" href="#fs_wrap"><img src="#" alt="맨위로" /></a>
+    <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+        <div class="col-md-12">
+            <p class="wow fadeInRight" data-wow-duration="1s">
+                Copyright &copy; 2021
+                <a target="_blank" href="http://bootstrapthemes.co">WOOSU AMS CO., LTD.</a>
+                ALL RIGHT RESERVED.
+            </p>
+        </div>
+    </div>
 </footer>
+
+
+
+
+</div>
+
+<!-- JS includes -->
+
 
 </html>
