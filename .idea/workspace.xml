@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22daa9b1-e95d-4e36-a358-61c74e479283" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/css/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/css/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/layouts/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/layouts/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
