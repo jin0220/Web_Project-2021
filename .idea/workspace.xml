@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22daa9b1-e95d-4e36-a358-61c74e479283" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/fragments/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
