@@ -11,4 +11,7 @@ public class MainController {
         public String home(){
             return "contents/home";
         }
+
+        @GetMapping("greetings")
+        public String greetings() {return "contents/greetings"; }
 }
