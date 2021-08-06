@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/layout}">
+<head>
+
+    <script type="text/javascript">
+
+        // function getTab1() {
+        //     document.getElementById("tab1").onclick=function(){
+        //         document.getElementById("2020").innerText="test";
+        //     }
+        // }
+
+        $(document).ready(function () {
+
+            $(".col-md-6").hide();
+
+            $("#btn1").click(function(){
+                $(".col-md-6").toggle();
+            });
+
+            $("#btn2").click(function(){
+                $("#p2").toggle();
+            });
+
+            $("#btn2").click(function(){
+                $("#p2").toggle();
+            });
+        });
+
+    </script>
+
+    <style>
+        .col{
+            border-bottom: solid;
+            border-width: 1px;
+            border-color: #CCCCCC;
+        }
+       .tab1, .tab2, .tab3, .tab4, .tab5{
+           color: #A6121F;
+           font-weight: bold;
+           font-size: 30px;
+           text-decoration: none;
+           margin-right: 100px;
+           border: 0;
+           outline: 0;
+           background-color: transparent !important;
+       }
+       </style>
+</head>
+
+
+<div layout:fragment="content">
+
+    <br /> <br /> <br /> <br /> <br /> <!--왜 이럼??-->
+
+    <!--Test section-->
+    <section id="test" class="test bg-grey roomy-60 fix">
+        <div class="container">
+            <div class="row">
+                <div class="main_test fix">
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="head_title text-center fix">
+                            <h2 class="text-uppercase">회사연혁</h2>
+                            <h5>우수그룹은 <b>대한민국 자동차부품산업의 역사</b>를 만들어갑니다.<br/>
+                                자동차부품산업에서 오랜 경험을 쌓아 온 우수그룹의 연혁을 소개합니다.
+                            </h5><br/><br/>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+
+                                            <button type="button" id="btn1" class="tab1">2020's</button>
+                                            <button type="button" id="btn2" class="tab2">2010's</button>
+                                            <button type="button" id="btn3" class="tab3">2000's</button>
+                                            <button type="button" id="btn4" class="tab4">1990's</button>
+                                            <button type="button" id="btn5" class="tab5">1980's</button>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <img class="img-circle" src="css/images/test-img1.jpg" alt="" />
+                                                    <i class="fa fa-quote-left"></i>
+                                                </div>
+
+                                                <div class="item_text">
+
+
+                                                    <h5>2020년</h5>
+                                                    <h6>n월</h6>
+
+                                                    <p id="p1"> nnn</p>
+
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End off test section -->
+
+
+
+</div>
+</html>
