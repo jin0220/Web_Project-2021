@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/layout}">
+<head>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            $(".btn").click(function(){
+                var content_id = $(this).attr('data-tab');
+
+                $('.btn').removeClass('current');
+                $('.text').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+content_id).addClass('current');
+            })
+        });
+
+    </script>
+    <style>
+        .btn{
+            width:285px;
+        }
+        .btn.current{
+            border: 2px solid #a6121f;
+            color: #a6121f;
+        }
+        .text{
+            display:none;
+            padding: 80px 20px;
+            cursor: pointer;
+        }
+        .text.current{
+            display: inherit;
+        }
+        #content-1{
+            text-align: center;
+        }
+        .highlight{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="row" style="margin-top:100px;">
+            <div class="main_features fix roomy-70">
+                <div class="btn current" data-tab="content-1">우수그룹 윤리행동 규범</div>
+                <div class="btn" data-tab="content-2">우수그룹 계약체결 규정</div>
+                <div class="btn" data-tab="content-3">우수그룹 협력업체 운용규정</div>
+                <div class="btn" data-tab="content-4">우수그룹 내부정보관리규정</div>
+                <div class="text current" id="content-1">
+                    <p>
+                        우수 AMS, 우수정기, 우수인디아 임직원은 투명경영 실천과 고객 및 협력사와의 상생협력을 통한 글로벌 기업을 만들기 위하여 다음과 같이 윤리행동규범을 결의, 실천한다.
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <span class="highlight">하나,</span> 우리는 항상 업무와 관련된 어떠한 형태의 금품이나 향응 수수 행위도 단호히 배척한다.<br/>
+                        <span class="highlight">하나,</span> 우리는 항상 정직성과 공정성을 생명으로 생각한다.<br/>
+                        <span class="highlight">하나,</span> 우리는 항상 고객의 입장에서 생각하고 행동한다.<br/>
+                        <span class="highlight">하나,</span> 우리는 항상 협력사와 공정하고 정당한 거래를 한다.<br/>
+                        <span class="highlight">하나,</span> 우리는 항상 품질향상과 기술혁신을 선도한다.<br/>
+                        <span class="highlight">하나,</span> 우리는 항상 고객과 협력사 정보를 소중하게 생각한다.<br/>
+                        <span class="highlight">하나,</span> 우리는 항상 사화공헌과 국가발전에 적극 기여한다.<br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        이상과 같이 위의 내용을 철저히 준수하여 투명경영 정착을 위하여 노력할 것을 결의한다.
+                        <br/>
+                        <br/>
+                        <br/>
+                        2012년 12월 22일 <br/>
+                        우수그룹 임직원 일동
+                    </p>
+                </div>
+                <div class="text" id="content-2">
+                    <h5>1. 목적</h5>
+                    <p>이 가이드라인은 당사와(이하 "원사업자"이라 함) 당사와 거래를 시작하는 기업(이하 "수급사업자"라 함)이 계약 체결에 있어
+                        상호 준수해야 할 내용을 제시함으로써 합리적이고 투명한 거래관행을 구축하는데 그 목적이 있다.</p>
+                    <br/>
+
+                    <h5>2. 가이드라인의 구성</h5>
+                    <p>
+                    1) 계약체결 인프라 관련사항<br/>
+                    2) 계약체결시 준수사항<br/>
+                    3) 계약체결시 금지사항<br/>
+                    </p>
+                    <br/>
+
+                    <h5>3. 계약체결 인프라</h5>
+                    <br/>
+                    <h6>3.1 업체선정방식</h6>
+                    <p>
+                        당사의 협력회사로 신규등록한 업체는 기본거래계약서 체결 후 신규부품 개발시 품목별로 업체 선정을 거쳐 개발업체로 선정되어야 비로서 당사와 거래를 개시하게 되며 업체선정방식에는 아래의 3가지가 있다.
+
+                    </p>
+
+                </div>
+                <div class="text" id="content-3">
+                </div>
+                <div class="text" id="content-4">
+                </div>
+            </div><!-- End off row -->
+        </div>
+    </div>
+</div>
+</html>
