@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/layout}">
+<head>
+    <style>
+        #search{
+            border:2px solid #a6121f;
+            width:100%;
+            margin-top:30px;
+            height:80px;
+            text-align:center;
+            padding-top:20px;
+        }
+        #search_select{
+            width:100px;
+            height: 30px;
+        }
+        #search_input{
+            width:200px;
+            height: 30px;
+        }
+        .search_btn{
+            border:2px solid #a6121f;
+            background: #a6121f;
+            width:50px;
+            height: 30px;
+            color: #fff;
+            border-radius: 4px;
+        }
+        .total{
+            margin-top:50px;
+            font-size:20px;
+        }
+        .highlight{
+            color: #a6121f;
+        }
+        table,th,td{
+            border-collapse: collapse;
+            width:100%;
+        }
+        th{
+            height: 80px;
+            border-bottom:2px solid #a6121f;
+        }
+        td{
+            height: 80px;
+            border-bottom:1px solid #dbdbdb;
+        }
+        /*td a{
+            color:#717171;
+            text-decoration:none;
+        }
+        td a:hover{
+            text-decoration:underline;
+        }*/
+        .board{
+            width:85px;
+            padding:10px 0px;
+            font-size:14px;
+            color:#000;
+            text-align:center;
+        }
+        .board_title{
+            width:693px;
+            font-size:14px;
+            color:#000;
+        }
+        .number_page_center{
+            width:100%;
+            margin-top:50px;
+            text-align:center;
+        }
+        .page_btn{
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+        .number_page_center ul li{
+            padding:5px;
+            display:inline;
+        }
+        .number_page_center ul li a{
+            color:#717171;
+            text-decoration:none;
+        }
+        #number_page{
+            margin:0 auto;
+            margin-top:20px;
+            width:25px;
+            height:22px;
+            text-align:center;
+            padding-top:3px;
+        }
+        h3{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="row" style="margin-top:100px;">
+            <div class="main_features fix roomy-70">
+                <div>
+                    <h3>공지사항</h3>
+                    <h4>우수AMS(주)의 <span class="highlight">NEWS를 빠르고 정확</span>하게 알려드립니다.</h4>
+                    <p>
+                        우수AMS(주)에 관심을 가져주신 여러분께 다시 한번 감사의 말씀 드리며,<br/>
+                        최고의 자동차 부품생산업체가 되고자 최선을 다하고 있습니다.
+                    </p>
+                </div>
+                <div id="search">
+                    <select id="search_select">
+                        <option>제목</option>
+                        <option>내용</option>
+                    </select>
+                    <input id="search_input" type="text">
+                    <button class="search_btn">검색</button>
+                </div>
+
+                <div class="total">총 <span class="highlight">???</span>건의 글이 있습니다.</div>
+
+                <table>
+                    <tr>
+                        <th class="board">No</th>
+                        <th class="board_title">제목</th>
+                        <th class="board">날짜</th>
+                    </tr>
+                    <tr>
+                        <td class="board">20</td>
+                        <td class="board_title">제26기 사업보고서 공지</td>
+                        <td class="board">2021.03.19</td>
+                    </tr>
+                    <tr>
+                        <td class="board">19</td>
+                        <td class="board_title">제26기 감사보고서(연결감사보고서 포함) 공지</td>
+                        <td class="board">2021.03.19</td>
+                    </tr>
+                </table>
+
+                <!--페이지 버튼-->
+                <div class="number_page_center">
+                    <ul>
+                        <li><button class="page_btn">◀ </button></li>
+                        <li id="number_page"><a href="#">1</a></li>
+                        <li><button class="page_btn">▶ </button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
