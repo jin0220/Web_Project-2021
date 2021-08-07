@@ -5,26 +5,41 @@
 
     <script type="text/javascript">
 
-        // function getTab1() {
-        //     document.getElementById("tab1").onclick=function(){
-        //         document.getElementById("2020").innerText="test";
-        //     }
-        // }
-
         $(document).ready(function () {
 
             $(".col-md-6").hide();
 
             $("#btn1").click(function(){
-                $(".col-md-6").toggle();
+                $("#2020").toggle();
             });
 
             $("#btn2").click(function(){
-                $("#p2").toggle();
+                $("#2015").toggle();
+                $("#2013").toggle();
             });
 
-            $("#btn2").click(function(){
-                $("#p2").toggle();
+            $("#btn3").click(function(){
+                $("#2009").toggle();
+
+                $("#2004").toggle();
+            });
+
+            $("#btn4").click(function(){
+                $("#1999").toggle();
+                $("#1998").toggle();
+                $("#1997").toggle();
+                $("#1996").toggle();
+                $("#1995").toggle();
+                $("#1994").toggle();
+                $("#1993").toggle();
+            });
+
+            $("#btn5").click(function(){
+                $("#1989").toggle();
+                $("#1988").toggle();
+                $("#1985").toggle();
+                $("#1984").toggle();
+                $("#1983").toggle();
             });
         });
 
@@ -46,6 +61,11 @@
            outline: 0;
            background-color: transparent !important;
        }
+       .title{
+           color: #262223;
+           font-weight: bold;
+       }
+
        </style>
 </head>
 
@@ -69,50 +89,253 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col">
-
                                             <button type="button" id="btn1" class="tab1">2020's</button>
                                             <button type="button" id="btn2" class="tab2">2010's</button>
                                             <button type="button" id="btn3" class="tab3">2000's</button>
                                             <button type="button" id="btn4" class="tab4">1990's</button>
                                             <button type="button" id="btn5" class="tab5">1980's</button>
-
                                         </div>
 
-                                        <div class="col-md-6">
+                                        <!--2020년 기록 없음-->
+
+                                        <div id="2015" class="col-md-6">
                                             <div class="test_item fix">
                                                 <div class="item_img">
-                                                    <img class="img-circle" src="css/images/test-img1.jpg" alt="" />
-                                                    <i class="fa fa-quote-left"></i>
+                                                    <h2 class="title"><b>2015</b></h2>
                                                 </div>
-
                                                 <div class="item_text">
+                                                    <h6>7월</h6>
+                                                    <p>우수AMS(주)CASCO 설립 (D/C공장)</p>
 
-
-                                                    <h5>2020년</h5>
-                                                    <h6>n월</h6>
-
-                                                    <p id="p1"> nnn</p>
-
-
-
+                                                    <h6>3월</h6>
+                                                    <p>소재 (D/C공장) 착공</p>
                                                 </div>
+                                            </div>
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2014</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>12월</h6>
+                                                    <p>2014년 창원상공대상 경영부문 수상</p>
 
+                                                    <h6>6월</h6>
+                                                    <p>기술연구소 신축</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="2013" class="col-md-6">
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2013</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>11월</h6>
+                                                    <p>OHSAS 18001 인증 획득</p>
+                                                </div>
+                                            </div>
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2012</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>12월</h6>
+                                                    <p>제 49회 무역의 날 일억불 수출탑 수상</p>
+
+                                                    <h6>4월</h6>
+                                                    <p>울산 신공장 이전 및 가동</p>
+                                                </div>
+                                            </div>
+                                        </div><!--2010's end-->
+
+
+
+                                        <div id="2009" class="col-md-6">
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2009</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>12월</h6>
+                                                    <p>제 46회 무역의 날 일억불 수출탑 수상</p>
+
+                                                    <h6>9월</h6>
+                                                    <p>자동차용 Air Compressor의 제조 기술 도입 계약 체결(일본 SANWA)</p>
+
+                                                    <h6>4월</h6>
+                                                    <p>특허 3건 양수(오토브레이크 관련 특허)</p>
+                                                </div>
+                                            </div>
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2008</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>5월</h6>
+                                                    <p>석탄산업훈장 수훈(중소기업유공자)</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2007</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>12월</h6>
+                                                    <p>계열사 'WOOSU AUTOMOTIVE INDIA PRIVATE LIMITED' 설립</p>
+
+                                                    <h6>9월</h6>
+                                                    <p>계열사 '우수정기(주)' 100% 출자회사 설립</p>
+
+                                                    <h6>6월</h6>
+                                                    <p>보통주 3,498,600주 무상증자(증자 후 자본금 7,580백만원)</p>
+
+                                                    <h6>4월</h6>
+                                                    <p>헬리코일 기립배열장치 특허 취득(제 10-0710622호)</p>
+
+                                                    <h6>3월</h6>
+                                                    <p>보통주 4,802,000주 무상증자(증자 후 자본금 5,831백만원)<br/>
+                                                        헬리코일 삽입장치 특허 취득(제10-0692200호)<br/>
+                                                        우수AMS(주)로 상호변경(구. 우수기계공업주식회사)</p>
+                                                </div>
+                                            </div>
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2005</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>11월</h6>
+                                                    <p>제 42회 무역의날 이천만불 수출탑 수상</p>
+
+                                                    <h6>10월</h6>
+                                                    <p>제 11회 경남무역인상 표창(한국무역협회장)</p>
+
+                                                    <h6>5월</h6>
+                                                    <p>보통주 3,430,000주 무상증자(증자 후 자본금 3,430백만원)<br/>
+                                                        TS 16949 인증 획득(인증기관: 미국 ABS QE)</p>
+                                                </div>
                                             </div>
                                         </div>
 
 
 
+                                        <div id="2004" class="col-md-6">
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2004</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>6월</h6>
+                                                    <p>창원공장으로 본사 이전</p>
+                                                </div>
+                                            </div>
+                                                <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>2003</b></h2>
+                                                </div>
 
+                                                <div class="item_text">
+                                                    <h6>7월</h6>
+                                                    <p>창원공장 신축공사 착공식</p>
+
+                                                    <h6>3월</h6>
+                                                    <p>QS9000 인증 획득(인증기관: 미국 ABS QE)</p>
+
+                                                    <h6>2월</h6>
+                                                    <p>함안 제 2공장 증축</p>
+                                                </div>
+                                                </div>
+                                                <div class="test_item fix">
+                                                    <div class="item_img">
+                                                        <h2 class="title"><b>2002</b></h2>
+                                                    </div>
+                                                    <div class="item_text">
+                                                        <h6>3월</h6>
+                                                        <p>제 36회 납세자의 날 표창(부산지방국세청장)</p>
+                                                    </div>
+                                                </div>
+                                                <div class="test_item fix">
+                                                    <div class="item_img">
+                                                        <h2 class="title"><b>2001</b></h2>
+                                                    </div>
+                                                    <div class="item_text">
+                                                        <h6>11월</h6>
+                                                        <p>ISO 14000 인증획득(인증기관: 미국 ABS QE)</p>
+
+                                                        <h6>10월</h6>
+                                                        <p>저축의 날 표창(재정경제부 장관 진념)</p>
+
+                                                        <h6>3월</h6>
+                                                        <p>모범상공인 국무 총리실 수상</p>
+                                                    </div>
+                                                </div>
+                                                <div class="test_item fix">
+                                                    <div class="item_img">
+                                                        <h2 class="title"><b>2000</b></h2>
+                                                    </div>
+                                                    <div class="item_text">
+                                                        <h6>12월</h6>
+                                                        <p>공장혁신운동 우수상 획득(대우자동차 창원사업본부)</p>
+
+                                                        <h6>9월</h6>
+                                                        <p>우상증자 250백만원(증자후 자본금 1,200백만원)</p>
+
+                                                        <h6>8월</h6>
+                                                        <p>울산공장 증축(650평)</p>
+
+                                                        <h6>4월</h6>
+                                                        <p>경남미래산업재단 ERP 전자상거래 모델업체 선정</p>
+
+                                                        <h6>3월</h6>
+                                                        <p>우수AMS(주) 부설연구소 설립(제 20001261호)</p>
+                                                    </div>
+                                                </div>
+                                            </div><!--2000's end-->
+
+
+
+                                        <div id="1999" class="col-md-6">
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>1999</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>12월</h6>
+                                                    <p>공장품질관리 1등급 획득(대우국민차)</p>
+
+                                                    <h6>7월</h6>
+                                                    <p>QS9000 인증 획득(인증기관: 미국 ABS QE)</p>
+
+                                                    <h6>2월</h6>
+                                                    <p>함안 제 2공장 증축</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="1998" class="col-md-6">
+                                            <div class="test_item fix">
+                                                <div class="item_img">
+                                                    <h2 class="title"><b>1998</b></h2>
+                                                </div>
+                                                <div class="item_text">
+                                                    <h6>2월</h6>
+                                                    <p>100PPM 품질인증 획득(중소기업청)</p>
+
+                                                    <h6>1월</h6>
+                                                    <p>HWS 9002 2등급 획득(현대자동차(주))</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section><!-- End off test section -->
+            </section><!-- End off test section -->
 
 
 
