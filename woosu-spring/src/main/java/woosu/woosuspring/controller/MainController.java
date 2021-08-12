@@ -14,7 +14,6 @@ public class MainController {
         @GetMapping("greetings")
         public String greetings() {return "contents/greetings"; }
 
-
         @GetMapping("regulation")
         public String regulation(){
                 return "contents/regulation";
