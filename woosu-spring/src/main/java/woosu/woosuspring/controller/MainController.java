@@ -19,9 +19,10 @@ public class MainController {
         public String regulation(){
                 return "contents/regulation";
         }
+
         @GetMapping("board")
         public String board(){
-                return "contents/board";
+                return "contents/center/board";
         }
 
         @GetMapping("intro")
@@ -29,11 +30,5 @@ public class MainController {
 
         @GetMapping("history")
         public String history() {return "contents/about/history"; }
-
-        @GetMapping("vision")
-        public String vision() {return "contents/about/vision"; }
-
-        @GetMapping("system")
-        public String system() {return "contents/about/system"; }
 
 }
