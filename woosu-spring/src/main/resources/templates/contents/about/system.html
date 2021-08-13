@@ -3,115 +3,225 @@
       layout:decorate="~{layouts/layout}">
 
 <head>
+    <script src="/js/accessibility.js"></script>
+    <script src="/js/exporting.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/organization.js"></script>
+    <script src="/js/sankey.js"></script>
+
+    <script type="text/javascript">
+
+        Highcharts.chart('container', {
+            chart: {
+                height: 600,
+                inverted: true
+            },
+
+            title: {
+                text: 'Highcharts Org Chart'
+            },
+
+            accessibility: {
+                point: {
+                    descriptionFormatter: function (point) {
+                        var nodeName = point.toNode.name,
+                            nodeId = point.toNode.id,
+                            nodeDesc = nodeName === nodeId ? nodeName : nodeName + ', ' + nodeId,
+                            parentDesc = point.fromNode.id;
+                        return point.index + '. ' + nodeDesc + ', reports to ' + parentDesc + '.';
+                    }
+                }
+            },
+
+            series: [{
+                type: 'organization',
+                name: 'Highsoft',
+                keys: ['from', 'to'],
+                data: [
+                    ['대표이사', '우수AMS(주)'],
+                    ['대표이사', '우수AMS(주) 울산지점'],
+                    ['대표이사', '우수정기(주)'],
+                    ['대표이사', '우수AMS(주) CASCO'],
+                    ['대표이사', '우수인디아'],
+                    ['대표이사', '우수체코'],
+                    ['우수AMS(주)', '기술연구소'],
+                    ['우수AMS(주) 울산지점', '기술연구소'],
+                    ['우수정기(주)', '기술연구소'],
+                    ['우수AMS(주) CASCO', '기술연구소'],
+                    ['우수인디아', '기술연구소'],
+                    ['기술연구소', '연구팀'],
+                    ['기술연구소', '개발팀'],
+                    ['우수AMS(주)', '재경관리실'],
+                    ['우수AMS(주) 울산지점', '재경관리실'],
+                    ['우수정기(주)', '재경관리실'],
+                    ['우수AMS(주) CASCO', '재경관리실'],
+                    ['우수인디아', '재경관리실'],
+                    ['우수AMS(주)', '생산실'],
+                    ['우수AMS(주) 울산지점', '생산실'],
+                    ['우수정기(주)', '생산실'],
+                    ['우수AMS(주) CASCO', '생산실'],
+                    ['우수인디아', '생산실'],
+                    ['우수AMS(주)', '생산관리실'],
+                    ['우수AMS(주) 울산지점', '생산관리실'],
+                    ['우수정기(주)', '생산관리실'],
+                    ['우수AMS(주) CASCO', '생산관리실'],
+                    ['우수인디아', '생산관리실'],
+                    ['우수AMS(주)', '품질관리실'],
+                    ['우수AMS(주) 울산지점', '품질관리실'],
+                    ['우수정기(주)', '품질관리실'],
+                    ['우수AMS(주) CASCO', '품질관리실'],
+                    ['우수인디아', '품질관리실'],
+                    ['우수AMS(주)', '보전실'],
+                    ['우수AMS(주) 울산지점', '보전실'],
+                    ['우수정기(주)', '보전실'],
+                    ['우수AMS(주) CASCO', '보전실'],
+                    ['우수인디아', '보전실']
+                ],
+                levels: [{
+                    level: 0,
+                    color: 'silver',
+                    dataLabels: {
+                        color: 'black'
+                    },
+                    height: 25
+                }, {
+                    level: 1,
+                    color: 'silver',
+                    dataLabels: {
+                        color: 'black'
+                    },
+                    height: 25
+                }, {
+                    level: 2,
+                    color: '#980104'
+                }, {
+                    level: 4,
+                    color: '#359154'
+                }],
+                nodes: [{
+                    id: 'Shareholders'
+                }, {
+                    id: 'Board'
+                }, {
+                    id: 'CEO',
+                    title: 'CEO',
+                    name: 'Grethe Hjetland',
+                    image: 'https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2020/03/17131126/Highsoft_03862_.jpg'
+                }, {
+                    id: 'HR',
+                    title: 'HR/CFO',
+                    name: 'Anne Jorunn Fjærestad',
+                    color: '#007ad0',
+                    image: 'https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2020/03/17131210/Highsoft_04045_.jpg'
+                }, {
+                    id: 'CTO',
+                    title: 'CTO',
+                    name: 'Christer Vasseng',
+                    image: 'https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2020/03/17131120/Highsoft_04074_.jpg'
+                }, {
+                    id: 'CPO',
+                    title: 'CPO',
+                    name: 'Torstein Hønsi',
+                    image: 'https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2020/03/17131213/Highsoft_03998_.jpg'
+                }, {
+                    id: 'CSO',
+                    title: 'CSO',
+                    name: 'Anita Nesse',
+                    image: 'https://wp-assets.highcharts.com/www-highcharts-com/blog/wp-content/uploads/2020/03/17131156/Highsoft_03834_.jpg'
+                }, {
+                    id: 'Product',
+                    name: 'Product developers'
+                }, {
+                    id: 'Web',
+                    name: 'Web devs, sys admin'
+                }, {
+                    id: 'Sales',
+                    name: 'Sales team'
+                }, {
+                    id: 'Market',
+                    name: 'Marketing team',
+                    column: 5
+                }],
+                colorByPoint: false,
+                color: '#007ad0',
+                dataLabels: {
+                    color: 'white'
+                },
+                borderColor: 'white',
+                nodeWidth: 65
+            }],
+            tooltip: {
+                outside: true
+            },
+            exporting: {
+                allowHTML: true,
+                sourceWidth: 800,
+                sourceHeight: 600
+            }
+
+        });
+
+    </script>
+
 
 
     <style>
-        /*.arr{*/
-        /*    padding-left: 300px;*/
-        /*}*/
-
-        .tree ul {
-            padding-top: 20px; position: relative;
-
-            transition: all 0.5s;
-            -webkit-transition: all 0.5s;
-            -moz-transition: all 0.5s;
+        .highcharts-figure, .highcharts-data-table table {
+            min-width: 360px;
+            max-width: 800px;
+            margin: 1em auto;
         }
 
-        .tree li {
-            float: left; text-align: center;
-            list-style-type: none;
-            position: relative;
-            padding: 20px 5px 0 5px;
-
-            transition: all 0.5s;
-            -webkit-transition: all 0.5s;
-            -moz-transition: all 0.5s;
+        .highcharts-data-table table {
+            font-family: Verdana, sans-serif;
+            border-collapse: collapse;
+            border: 1px solid #EBEBEB;
+            margin: 10px auto;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+        .highcharts-data-table caption {
+            padding: 1em 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .highcharts-data-table th {
+            font-weight: 600;
+            padding: 0.5em;
+        }
+        .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+            padding: 0.5em;
+        }
+        .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+        .highcharts-data-table tr:hover {
+            background: #f1f7ff;
         }
 
-        /*We will use ::before and ::after to draw the connectors*/
-
-        .tree li::before, .tree li::after{
-            content: '';
-            position: absolute; top: 0; right: 50%;
-            border-top: 1px solid #ccc;
-            width: 50%; height: 20px;
+        #container h4 {
+            text-transform: none;
+            font-size: 14px;
+            font-weight: normal;
         }
-        .tree li::after{
-            right: auto; left: 50%;
-            border-left: 1px solid #ccc;
+        #container p {
+            font-size: 13px;
+            line-height: 16px;
         }
 
-        /*We need to remove left-right connectors from elements without
-        any siblings*/
-        .tree li:only-child::after, .tree li:only-child::before {
-            display: none;
+        @media screen and (max-width: 600px) {
+            #container h4 {
+                font-size: 2.3vw;
+                line-height: 3vw;
+            }
+            #container p {
+                font-size: 2.3vw;
+                line-height: 3vw;
+            }
         }
 
-        /*Remove space from the top of single children*/
-        .tree li:only-child{ padding-top: 0;}
-
-        /*Remove left connector from first child and
-        right connector from last child*/
-        .tree li:first-child::before, .tree li:last-child::after{
-            border: 0 none;
-        }
-        /*Adding back the vertical connector to the last nodes*/
-        .tree li:last-child::before{
-            border-right: 1px solid #ccc;
-            border-radius: 0 5px 0 0;
-            -webkit-border-radius: 0 5px 0 0;
-            -moz-border-radius: 0 5px 0 0;
-        }
-        .tree li:first-child::after{
-            border-radius: 5px 0 0 0;
-            -webkit-border-radius: 5px 0 0 0;
-            -moz-border-radius: 5px 0 0 0;
-        }
-
-        /*Time to add downward connectors from parents*/
-        .tree ul ul::before{
-            content: '';
-            position: absolute; top: 0; left: 50%;
-            border-left: 1px solid #ccc;
-            width: 0; height: 20px;
-        }
-
-        .tree li a{
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            text-decoration: none;
-            color: #666;
-            font-family: arial, verdana, tahoma;
-            font-size: 11px;
-            display: inline-block;
-
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-
-            transition: all 0.5s;
-            -webkit-transition: all 0.5s;
-            -moz-transition: all 0.5s;
-        }
-
-        /*Time for some hover effects*/
-        /*We will apply the hover effect the the lineage of the element also*/
-        .tree li a:hover, .tree li a:hover+ul li a {
-            background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
-        }
-        /*Connector styles on hover*/
-        .tree li a:hover+ul li::after,
-        .tree li a:hover+ul li::before,
-        .tree li a:hover+ul::before,
-        .tree li a:hover+ul ul::before{
-            border-color:  #94a0b4;
-        }
-
-        /*Thats all. I hope you enjoyed it.
-        Thanks :)*/
     </style>
-
 
 </head>
 
@@ -131,51 +241,10 @@
                         </div>
                     </div>
 
-                    <div class="arr">
-                        <div class="tree">
-                            <ul>
-                                <li>
-                                    <a href="#">대표이사</a>
-                                    <ul>
-                                        <li>
+                    <figure class="highcharts-figure">
+                        <div id="container"></div>
+                    </figure>
 
-                                            <a href="#">우수AMS(주)</a>
-                                            <a href="#">우수AMS(주) 울산지점</a>
-                                            <a href="#">우수정기(주)</a>
-                                            <a href="#">우수AMS(주) CASCO</a>
-                                            <a href="#">우수인디아</a>
-                                            <a href="#">우수체코</a>
-
-                                            <ul>
-                                                <li>
-                                                    <a href="#">재경관리실</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">생산실</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">생산관리실</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">품질관리실</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">보전실</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                        <ul>
-                                                <li><a href="#">기술연구소</a></li>
-
-
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
