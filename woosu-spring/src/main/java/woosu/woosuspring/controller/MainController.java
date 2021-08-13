@@ -52,4 +52,9 @@ public class MainController {
                 return "contents/center/contact";
         }
 
+        @GetMapping("recruit_info")
+        public String recruit_info(){
+                return "contents/recruit/recruit_info";
+        }
+
 }

@@ -36,10 +36,17 @@
           text-align: center;
           margin-left:10px;
           margin-right: 10px;
+          vertical-align: middle;
       }
       .step_title{
           font-weight: bold;
           margin-bottom: 10px;
+      }
+      .next{
+          font-size: 30px;
+          margin-left: 10px;
+          margin-right: 10px;
+          color: #ccc;
       }
       .notice{
           margin-top:40px;
@@ -68,9 +75,29 @@
       .item_content{
           padding-left: 1.39vw;
           padding-right: 1.39vw;
-          width: 18.75vw;
-          height: 4.17vw;
+          width: 80%;
       }
+      .input_box{
+           margin-top: 20px;
+      }
+      .input_box input{
+           margin-right: 10px;
+      }
+      .info{
+          height: 60px;
+          width: 100%;
+          border: none;
+      }
+      .submit_btn{
+          width: 100px;
+          height: 40px;
+          border: 1px solid #a6121f;
+          color: #a6121f;
+          background: #fff;
+          margin-top: 50px;
+          margin-left: 90%;
+      }
+
     </style>
 </head>
 <div layout:fragment="content">
@@ -94,10 +121,12 @@
                                 <li class="step_title">STEP 01</li>
                                 <li>문의 내용 작성</li>
                             </ul>
+                            <span class="next"> > </span>
                             <ul class="step">
                                 <li class="step_title">STEP 02</li>
                                 <li>접수 완료</li>
                             </ul>
+                            <span class="next"> > </span>
                             <ul class="step">
                                 <li class="step_title">STEP 03</li>
                                 <li>이메일로 답변 확인</li>
@@ -118,58 +147,69 @@
                         <h4>1:1 문의하기</h4>
                     </div><!--/col1-->
                     <div class="col2">
-                      <div class="item_wrap">
-                        <div class="item">
-                            <div class="item_title">
-                                회사선택
-                            </div>
-                            <div class="item_content">
-
-                            </div>
-                        </div><!--/item-->
-                        <div class="item">
-                            <div class="item_title">
-                                성명
-                            </div>
-                            <div class="item_content">
-
-                            </div>
-                        </div><!--/item-->
-                        <div class="item">
-                            <div class="item_title">
-                                이메일
-                            </div>
-                            <div class="item_content">
-
-                            </div>
-                        </div><!--/item-->
-                        <div class="item">
-                            <div class="item_title">
-                                연락처
-                            </div>
-                            <div class="item_content">
-
-                            </div>
-                        </div><!--/item-->
-                        <div class="item">
-                            <div class="item_title">
-                                제목
-                            </div>
-                            <div class="item_content">
-
-                            </div>
-                        </div><!--/item-->
-                        <div class="item">
-                            <div class="item_title">
-                                문의 내용
-                            </div>
-                            <div class="item_content">
-
-                            </div>
-                        </div><!--/item-->
-                      </div><!--/item_wrap-->
+                        <form action="" method="" name="">
+                            <div class="item_wrap">
+                                <div class="item">
+                                    <div class="item_title">
+                                        회사선택
+                                    </div>
+                                    <div class="item_content">
+                                        <div class="input_box">
+                                            <input type="radio" name="chk_info" class="radio_btn" value="창원본사">창원본사
+                                            <input type="radio" name="chk_info" class="radio_btn" value="울산공장">울산공장
+                                            <input type="radio" name="chk_info" class="radio_btn" value="우수정기">우수정기
+                                            <input type="radio" name="chk_info" class="radio_btn" value="우수인디아/우수체코">우수인디아/우수체코
+                                        </div>
+                                    </div>
+                                </div><!--/item-->
+                                <div class="item">
+                                    <div class="item_title">
+                                        성명
+                                    </div>
+                                    <div class="item_content">
+                                        <input type="text" name="name" class="info" placeholder="이름을 입력해주세요.">
+                                    </div>
+                                </div><!--/item-->
+                                <div class="item">
+                                    <div class="item_title">
+                                        이메일
+                                    </div>
+                                    <div class="item_content">
+                                        <input type="text" name="email" class="info" placeholder="이메일을 입력해주세요" required>
+                                    </div>
+                                </div><!--/item-->
+                                <div class="item">
+                                    <div class="item_title">
+                                        연락처
+                                    </div>
+                                    <div class="item_content">
+                                        <input type="text" name="phone" class="info" placeholder="'-'없이 입력해주세요.">
+                                    </div>
+                                </div><!--/item-->
+                                <div class="item">
+                                    <div class="item_title">
+                                        제목
+                                    </div>
+                                    <div class="item_content">
+                                        <input type="text" name="title" class="info" placeholder="제목을 입력해주세요.">
+                                    </div>
+                                </div><!--/item-->
+                                <div class="item">
+                                    <div class="item_title">
+                                        문의 내용
+                                    </div>
+                                    <div class="item_content">
+                                        <textarea cols="70" rows="10"
+                                                  style="resize: none; border: none; margin-top:10px;"
+                                                  placeholder="내용을 입력해주세요." required></textarea>
+                                    </div>
+                                </div><!--/item-->
+                            </div><!--/item_wrap-->
+                        </form>
                     </div><!--/col2-->
                 </div><!--/col-->
+
+                <button class="submit_btn">문의하기</button>
 
             </div>
         </div>
