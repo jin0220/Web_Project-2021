@@ -30,6 +30,13 @@ public class MainController {
         @GetMapping("history")
         public String history() {return "contents/about/history"; }
 
+        @GetMapping("vision")
+        public String vision() {return "contents/about/vision"; }
+
+        @GetMapping("system")
+        public String system() {return "contents/about/system"; }
+
+
         @GetMapping("sitemap")
         public String sitemap(){
                 return "contents/center/sitemap";
