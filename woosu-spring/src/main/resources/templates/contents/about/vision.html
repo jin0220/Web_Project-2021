@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/layout}">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <style>
+        .col-md-12, .col-sm-12, .col-xs-12{
+            padding-bottom: 70px;
+        }
+        span{
+            color: #A6121F;
+            font-weight: bold;
+        }
+        .features{
+            padding-bottom: 100px;
+        }
 
-</body>
+    </style>
+</head>
+
+<div layout:fragment="content">
+
+    <br /> <br /> <br /> <br /> <br /> <!--왜 이럼??-->
+    <!--뭐 넣지-->
+        <!--Featured Section-->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="main_features fix roomy-70">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="head_title text-center fix">
+                                <h2 class="text-uppercase">VISION</h2>
+                                <h4>세계 최고의 자동차부품생산업체로 도약하는 <span>GLOBAL 우수 AMS</span></h4>
+                                <h5>우수AMS(주)는 세계 최고의 자동차부품업체로 도약하기 위하여 끊임없는 연구개발과 노력으로<br/>
+                                    더욱 발전하는 기업을 만들겠습니다.</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="features_item sm-m-top-30">
+                                <div class="f_item_icon">
+                                    <i class="fa fa-building-o"></i>
+                                </div>
+                                <div class="f_item_text">
+                                    <h3>희망과 보람찬 회사</h3>
+                                    <p>우수AMS(주)는 항상 희망찬 삶을 추구하며, 보람찬 회사를 경영이념으로 추구합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="features_item sm-m-top-30">
+                                <div class="f_item_icon">
+                                    <i class="fa fa-handshake-o"></i>
+                                </div>
+                                <div class="f_item_text" style="padding-left: 25px">
+                                    <h3>사회로부터 신뢰받는 회사</h3>
+                                    <p>우수AMS(주)는 사회로부터 신뢰받는 회사가 되고자 항상 노력합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="features_item sm-m-top-30">
+                                <div class="f_item_icon">
+                                    <i class="fa fa-users"></i>
+
+                                </div>
+                                <div class="f_item_text" style="padding-left: 5px">
+                                    <h3>고객으로부터 신뢰받는 회사</h3>
+                                    <p>우수AMS(주)는 고객으로 부터 신뢰받는 회사가 되고자 항상 노력합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End off row -->
+            </div><!-- End off container -->
+        </section><!-- End off Featured Section-->
+
+    <section id="action" class="action bg-primary roomy-40">
+        <div class="container">
+            <div class="row">
+                <div class="maine_action">
+                    <div class="col-md-8">
+                        <div class="action_item text-center">
+                            <h2 class="text-white text-uppercase">PRODUCTS INFO</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="action_btn text-left sm-text-center">
+                            <a href="" class="btn btn-default">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 </html>
