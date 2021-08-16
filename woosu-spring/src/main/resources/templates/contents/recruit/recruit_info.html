@@ -2,7 +2,7 @@
 <html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layouts/layout}">
 <head>
-  <style>
+    <style>
     h3{
           font-size: 25px;
           text-align: center;
@@ -35,105 +35,323 @@
           list-style-type: disc;
           margin-left:20px;
       }
-  </style>
+      table{
+          width:100%;
+          margin-bottom: 20px;
+      }
+      .divide{
+          width:20%;
+          text-align: center;
+      }
+      .t_th{
+          background: #d92332;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border: 1px solid #a6121f;
+          text-align: center;
+          color: #fff;
+      }
+      td{
+          border: 1px solid #a6121f;
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+      .body{
+          padding-left:10px
+      }
+      .divide_t{
+          padding-left: 10px;
+          color: #d92332;
+      }
+      .diagram3:before {
+          position: absolute;
+          top: 28px;
+          left: 55%;
+          margin-left: -42%;
+          content: "";
+          display: inline-block;
+          width: 55%;
+          height: 1px;
+          border-top: 1px dashed #B1B1B1;
+      }
+      .diagram3 {
+          position: relative;
+          display: inline-block;
+          width:calc(100% + 5.5rem);
+          margin-bottom: 40px;
+      }
+      .diagram3 li{
+          display: inline-block;
+          width:20%;
+      }
+      .diagram3 .label {
+        display: block;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        margin: 0 auto .9rem;
+        background-color: #959FA5;
+        color: #fff;
+        text-align: center;
+        line-height: 3.5rem;
+      }
+      .diagram3 li:last-child .label {
+          background-color: #d92332;
+      }
+      .txt{
+          text-align: center;
+      }
+      .inner{
+            width:100%;
+            display: block;
+      }
+      h5{
+          font-weight: bold;
+      }
+
+
+    </style>
 </head>
 <div layout:fragment="content">
-  <div class="container">
-    <div class="row" style="margin-top:100px;">
-      <div class="main_features fix roomy-70">
-        <h3>채용안내</h3>
+    <div class="container">
+        <div class="row" style="margin-top:100px;">
+            <div class="main_features fix roomy-70">
+                <h3>채용안내</h3>
 
-        <div class="col">
-          <div class="col1">
-            <h4>인제상</h4>
-          </div><!--/col1-->
-          <div class="col2">
-            <h5>창의적 인재</h5>
-            <p>
-              항상 새로운 시각에서 문제를 바라보며 창의적인 사고와 행동을 실무에 적용할 수 있는 인재
-            </p>
-            <h5>책임감</h5>
-            <p>
-              건전한 가치관과 윤리의식을 바탕으로 회사내에서는 동료간 화합에 힘쓰고 회사 밖에서는 책임감있는
-              사회인으로서 회사의 명예와 자긍심을 높일 수 있는 인재
-            </p>
-            <h5>성실 + 열정 + 적극적</h5>
-            <p>
-              일을 자아실현, 인생완성의 수단으로 여기며 매사에 책임의식을 갖고 끝까지 해내는 인재
-            </p>
-          </div><!--/col2-->
-        </div><!--/col-->
+                <div class="col">
+                    <div class="col1">
+                        <h4>인제상</h4>
+                    </div><!--/col1-->
+                    <div class="col2">
+                        <h5>창의적 인재</h5>
+                        <p>
+                            항상 새로운 시각에서 문제를 바라보며 창의적인 사고와 행동을 실무에 적용할 수 있는 인재
+                        </p>
+                        <h5>책임감</h5>
+                        <p>
+                            건전한 가치관과 윤리의식을 바탕으로 회사내에서는 동료간 화합에 힘쓰고 회사 밖에서는 책임감있는
+                            사회인으로서 회사의 명예와 자긍심을 높일 수 있는 인재
+                        </p>
+                        <h5>성실 + 열정 + 적극적</h5>
+                        <p>
+                            일을 자아실현, 인생완성의 수단으로 여기며 매사에 책임의식을 갖고 끝까지 해내는 인재
+                        </p>
+                    </div><!--/col2-->
+                </div><!--/col-->
 
-        <div class="col">
-          <div class="col1">
-            <h4>인사제도</h4>
-          </div><!--/col1-->
-          <div class="col2">
-            <h5>급여체계</h5>
-            <p>
-              차장이상 직급은 능력과 성과에 따른 보상이 차등 적용되는 연봉제를, 과장이하는 월급제를 시행하고 있습니다.
-            </p>
-            <h5>승격체계</h5>
-            <p>
-              당사의 승격 인사는 고과성적, 교육훈련결과, 근속년수, 경역, 연령, 기타 자질에 대한 합리적이고
-              다양한 평가를 통해 소정의 승격포인트 및 어학기준에 달한 직원을 대상으로 엄격한 심사를 거쳐
-              결정되는 승격 체계를 시행하고 있습니다.
-            </p>
-          </div><!--/col2-->
-        </div><!--/col-->
+                <div class="col">
+                    <div class="col1">
+                        <h4>인사제도</h4>
+                    </div><!--/col1-->
+                    <div class="col2">
+                        <h5>급여체계</h5>
+                        <p>
+                            차장이상 직급은 능력과 성과에 따른 보상이 차등 적용되는 연봉제를, 과장이하는 월급제를 시행하고 있습니다.
+                        </p>
+                        <table>
+                            <tr>
+                                <th class="t_th divide">구분</th>
+                                <th class="t_th">연봉제</th>
+                                <th class="t_th">월급제</th>
+                            </tr>
+                            <tr>
+                                <td class="t_td divide">급여</td>
+                                <td class="t_td body">월정급여는 매년 평가결과에 따라 차등 조정됨.</td>
+                                <td class="t_td body">기본급, 직책수당, 근속수당, 배우자수당 등</td>
+                            </tr>
+                            <tr>
+                                <td class="t_td divide">상여</td>
+                                <td class="t_td body" colspan="2">기본급의 500% (3, 6, 9, 12월 각 100%, 구정, 하계휴가 각 50%)</td>
+                            </tr>
+                        </table>
 
-        <div class="col">
-          <div class="col1">
-            <h4>복리후생</h4>
-          </div><!--/col1-->
-          <div class="col2">
-              <div class="content">
-                <h5>4대보험</h5>
-                <p>국민연금, 고용보험, 산재보험, 건강보험</p>
+                        <h5>승격체계</h5>
+                        <p>
+                            당사의 승격 인사는 고과성적, 교육훈련결과, 근속년수, 경역, 연령, 기타 자질에 대한 합리적이고
+                            다양한 평가를 통해 소정의 승격포인트 및 어학기준에 달한 직원을 대상으로 엄격한 심사를 거쳐
+                            결정되는 승격 체계를 시행하고 있습니다.
+                        </p>
+                        <p>추가하기</p>
+                    </div><!--/col2-->
+                </div><!--/col-->
 
-                <h5>휴무 및 휴가</h5>
-                <p>주 5일 근무, 연차, 정기 휴가</p>
+                <div class="col">
+                    <div class="col1">
+                        <h4>복리후생</h4>
+                    </div><!--/col1-->
+                    <div class="col2">
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>4대보험</h5>
+                                    <p>국민연금, 고용보험, 산재보험, 건강보험</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <h5>보상제도</h5>
-                <p>장기근속자 포상, 우수사원 표창/포상, 퇴직연금</p>
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>휴무 및 휴가</h5>
+                                    <p>주 5일 근무, 연차, 정기 휴가</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <h5>건강관리 지원</h5>
-                <p>건강검진</p>
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>보상제도</h5>
+                                    <p>장기근속자 포상, 우수사원 표창/포상, 퇴직연금</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <h5>생활편의 지원</h5>
-                <p>조식제공, 중식제공, 석식제공, 근무복 지급, 통근버스 운행</p>
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>건강관리 지원</h5>
+                                    <p>건강검진</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <h5>경조사 지원</h5>
-                <p>기념선물 지금, 가종 경조금</p>
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>생활편의 지원</h5>
+                                    <p>조식/중식/석식제공, 근무복 지급, 통근버스 운행</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <h5>사내 편의시설</h5>
-                <p>사내식당, 휴게실</p>
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>경조사 지원</h5>
+                                    <p>기념선물 지금, 가종 경조금</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <h5>생활안정 지원</h5>
-                <p>기숙사 운영</p>
-              </div>
-          </div><!--/col2-->
-        </div><!--/col-->
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>사내 편의시설</h5>
+                                    <p>사내식당, 휴게실</p>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="col">
-          <div class="col1">
-            <h4>전형안내</h4>
-          </div><!--/col1-->
-          <div class="col2">
-            <h5>전형절차</h5>
-            <h5>주요평가 내용</h5>
-            <h5>기타사항</h5>
-            <ul class="etc">
-              <li>제출된 입사지원서(이력서)는 일체 반환하지 않으며, 본 채용의 목적 이외에는 사용하지 않습니다.</li>
-              <li>제출된 입사지원서(이력서)에 허위로 기재된 사실이 있을 시에는 채용이 취소될 수 있습니다.</li>
-              <li>국가보훈대상자, 장애인 등은 관계 법령에 의거 우대합니다.</li>
-              <li>기타 채용관련 문의사항은 경영관리부 채용담당자에게 문의 바랍니다.</li>
-            </ul>
-          </div><!--/col2-->
-        </div><!--/col-->
+                        <div class="col-md-6">
+                            <div class="test_item fix">
+                                <div class="item_text">
+                                    <h5>생활안정 지원</h5>
+                                    <p>기숙사 운영</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/col2-->
+                </div><!--/col-->
 
-      </div>
+                <div class="col">
+                    <div class="col1">
+                        <h4>전형안내</h4>
+                    </div><!--/col1-->
+                    <div class="col2">
+                        <table>
+                            <tr>
+                                <th class="t_th">정기채용</th>
+                                <th class="t_th">수시채용</th>
+                            </tr>
+                            <tr>
+                                <td class="t_td body">신입사원을 대상으로 상반기 또는 하반기에 정기적으로 실시하는 채용</td>
+                                <td class="t_td body">회사가 필요로 하는 전략추진 및 연구개발 분야에 한하여 전형절차를 거친 후 채용</td>
+                            </tr>
+                        </table>
+
+                        <h5>전형절차</h5>
+                        <div class="inner">
+                            <div style="width: 100%; margin-top:20px; margin-bottom:20px;"> 1. 관리직</div>
+                            <ul class="diagram3">
+                                <li>
+                                    <span class="label">01</span>
+                                    <p class="txt">입사지원(서류전형)</p>
+                                </li>
+                                <li>
+                                    <span class="label">02</span>
+                                    <p class="txt">1차면접</p>
+                                </li>
+                                <li>
+                                    <span class="label">03</span>
+                                    <p class="txt">2차면접</p>
+                                </li>
+                                <li>
+                                    <span class="label">04</span>
+                                    <p class="txt">채용검진</p>
+                                </li>
+                            </ul>
+
+                            <div style="width: 100%; margin-top:20px; margin-bottom:20px;"> 2. 생산직</div>
+                            <ul class="diagram3">
+                                <li>
+                                    <span class="label">01</span>
+                                    <p class="txt">입사지원(서류전형)</p>
+                                </li>
+                                <li>
+                                    <span class="label">02</span>
+                                    <p class="txt">1차면접</p>
+                                </li>
+                                <li>
+                                    <span class="label">03</span>
+                                    <p class="txt">배치전검진</p>
+                                </li>
+                                <li>
+                                    <span class="label">04</span>
+                                    <p class="txt">합격자발표</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h5>주요평가 내용</h5>
+                        <table>
+                            <tr>
+                                <th class="t_th divide">구분</th>
+                                <th class="t_th" colspan="2">평가내용</th>
+                            </tr>
+                            <tr>
+                                <td class="t_td divide">서류전형</td>
+                                <td class="t_td body" colspan="2">서류전형은 세부 모집분야에서 필요로 하는 능력 및 자격요건을
+                                    기준으로 하여 입시지원서 및 기타 제출된 서류를 바탕으로 종합적으로 평가합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="t_td divide" rowspan="2">면접</td>
+                                <td class="t_td divide_t">전공 실무면접</td>
+                                <td class="t_td body">전공 및 경영지식, 상황대처능력, 문제해결능력, 직무수행능력 등을 종합적으로 평가</td>
+                            </tr>
+                            <tr>
+                                <td class="t_td divide_t">인성 임원면접</td>
+                                <td class="t_td body">인성중심으로 기본 자질 및 태도, 가치관, 당사 인재상과의 적합성 등을 종합적으로 평가</td>
+                            </tr>
+                            <tr>
+                                <td class="t_td divide">신체검사</td>
+                                <td class="t_td body" colspan="2">신체검사 결과에 따라 회사규정에 의거 최종 합격/불합격 여부가 결정 됩니다.</td>
+                            </tr>
+                        </table>
+
+                        <h5>기타사항</h5>
+                        <ul class="etc">
+                            <li>제출된 입사지원서(이력서)는 일체 반환하지 않으며, 본 채용의 목적 이외에는 사용하지 않습니다.</li>
+                            <li>제출된 입사지원서(이력서)에 허위로 기재된 사실이 있을 시에는 채용이 취소될 수 있습니다.</li>
+                            <li>국가보훈대상자, 장애인 등은 관계 법령에 의거 우대합니다.</li>
+                            <li>기타 채용관련 문의사항은 경영관리부 채용담당자에게 문의 바랍니다.</li>
+                        </ul>
+                    </div><!--/col2-->
+                </div><!--/col-->
+
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 </html>
