@@ -36,6 +36,8 @@ public class MainController {
         @GetMapping("system")
         public String system() {return "contents/about/system"; }
 
+        @GetMapping("ci")
+        public String ci() {return "contents/about/ci"; }
 
         @GetMapping("sitemap")
         public String sitemap(){
