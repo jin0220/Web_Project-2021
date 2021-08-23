@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{layouts/layout}">
+      layout:decorate="~{layouts/layout}" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <style>
         #search{
@@ -92,6 +92,8 @@
         }
         h3{
             font-size: 25px;
+            text-align:center;
+            margin-bottom: 60px;
         }
     </style>
 </head>
@@ -100,12 +102,18 @@
         <div class="row" style="margin-top:100px;">
             <div class="main_features fix roomy-70">
                 <div>
-                    <h3>공지사항</h3>
-                    <h4>우수AMS(주)의 <span class="highlight">NEWS를 빠르고 정확</span>하게 알려드립니다.</h4>
-                    <p>
-                        우수AMS(주)에 관심을 가져주신 여러분께 다시 한번 감사의 말씀 드리며,<br/>
-                        최고의 자동차 부품생산업체가 되고자 최선을 다하고 있습니다.
-                    </p>
+                    <th:block th:switch="${page}">
+                        <h3 th:case="center">고객센터</h3>
+                        <h3 th:case="receipt">채용공고 및 접수</h3>
+                        <h3 th:case="faq">채용FAQ</h3>
+                        <h3 th:case="qna">채용Q&A</h3>
+                        <h3 th:case="*">공지사항</h3>
+                    </th:block>
+<!--                    <h4>우수AMS(주)의 <span class="highlight">NEWS를 빠르고 정확</span>하게 알려드립니다.</h4>-->
+<!--                    <p>-->
+<!--                        우수AMS(주)에 관심을 가져주신 여러분께 다시 한번 감사의 말씀 드리며,<br/>-->
+<!--                        최고의 자동차 부품생산업체가 되고자 최선을 다하고 있습니다.-->
+<!--                    </p>-->
                 </div>
                 <div id="search">
                     <select id="search_select">
@@ -124,7 +132,7 @@
                         <th class="board_title">제목</th>
                         <th class="board">날짜</th>
                     </tr>
-                    <tr>
+                    <tr th:onclick="'location.href=\'' + @{board_d(page=${page})} + '\';'">
                         <td class="board">20</td>
                         <td class="board_title">제26기 사업보고서 공지</td>
                         <td class="board">2021.03.19</td>
