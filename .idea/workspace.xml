@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22daa9b1-e95d-4e36-a358-61c74e479283" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/recruit/recruit_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/center/board_d.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/java/woosu/woosuspring/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/java/woosu/woosuspring/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/center/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/center/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/center/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/center/sitemap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/center/board.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/contents/center/board.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/woosu-spring/src/main/resources/templates/fragments/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

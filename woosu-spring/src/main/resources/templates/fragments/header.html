@@ -155,7 +155,7 @@
                             <li class="tab-link" data-tab="tab-2"><a href="#">연구개발</a></li>
                             <li class="tab-link" data-tab="tab-3"><a href="#">제품소개</a></li>
                             <li class="tab-link" data-tab="tab-4"><a href="#">투자정보</a></li>
-                            <li class="tab-link" data-tab="tab-5"><a href="#">인재경영</a></li>
+                            <li class="tab-link" data-tab="tab-5"><a href="recruit_info">인재경영</a></li>
                             <li class="tab-link" data-tab="tab-6"><a href="board">고객센터</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -243,15 +243,15 @@
                     <div id="tab-5" class="tab-content">
                         <ul class="tab-content-menu">
                             <li class="sub-menu"><a href="recruit_info">채용안내</a></li>
-                            <li class="sub-menu"><a href="#">채용공고 및 접수</a></li>
-                            <li class="sub-menu"><a href="#">채용FAQ</a></li>
-                            <li class="sub-menu"><a href="#">채용Q&A</a></li>
+                            <li class="sub-menu"><a th:href="@{board(page='receipt')}">채용공고 및 접수</a></li>
+                            <li class="sub-menu"><a th:href="@{board(page='faq')}">채용FAQ</a></li>
+                            <li class="sub-menu"><a th:href="@{board(page='qna')}">채용Q&A</a></li>
                         </ul>
                     </div>
                     <div id="tab-6" class="tab-content">
                         <ul class="tab-content-menu">
-                            <li class="sub-menu"><a href="board">공지사항</a></li>
-                            <li class="sub-menu"><a href="board">고객센터</a></li>
+                            <li class="sub-menu"><a th:href="@{board}">공지사항</a></li>
+                            <li class="sub-menu"><a th:href="@{board(page='center')}">고객센터</a></li>
                             <li class="sub-menu"><a href="pr">홍보동영상</a></li>
                             <li class="sub-menu"><a href="contact">Contact Us</a></li>
                             <li class="sub-menu"><a href="sitemap">Sitemap</a></li>

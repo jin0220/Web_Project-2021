@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/layout}" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <style>
+        h3{
+            font-size: 25px;
+            text-align:center;
+            margin-bottom: 60px;
+        }
+        .box{
+            border-top: 2px solid #a6121f;
+            width: 100%;
+        }
+        .head_title{
+            border-bottom: 1px solid #ccc;
+            height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .title{
+            display:inline-block;
+            margin-top: 20px;
+            color: #000;
+            font-size: 15px;
+        }
+        .date{
+            display:inline-block;
+            margin-left: 88%;
+            font-size: 15px;
+        }
+        .body_content{
+            padding: 40px 20px 60px 20px;
+            box-sizing: border-box;
+        }
+        .list_btn{
+            width: 50px;
+            height: 30px;
+        }
+  </style>
+</head>
+<div layout:fragment="content">
+  <div class="container">
+    <div class="row" style="margin-top:100px;">
+      <div class="main_features fix roomy-70">
+        <div>
+          <th:block th:switch="${page}">
+            <h3 th:case="center">고객센터</h3>
+            <h3 th:case="receipt">채용공고 및 접수</h3>
+            <h3 th:case="faq">채용FAQ</h3>
+            <h3 th:case="qna">채용Q&A</h3>
+            <h3 th:case="*">공지사항</h3>
+          </th:block>
+        </div>
+
+        <div class="box">
+          <div class="head_title">
+            <div class="title">제목</div>
+            <div class="date">0000.00.00</div>
+          </div>
+          <div class="body_content">
+              내용
+          </div>
+        </div><!--/box-->
+
+        <button class="list_btn">목록</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</html>
