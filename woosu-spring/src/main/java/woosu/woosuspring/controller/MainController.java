@@ -1,7 +1,11 @@
 package woosu.woosuspring.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.logging.Logger;
 
 @Controller
 public class MainController {
@@ -20,8 +24,15 @@ public class MainController {
         }
 
         @GetMapping("board")
-        public String board(){
+        public String board(@RequestParam(required=false) String page, Model model){
+                model.addAttribute("page", page);
                 return "contents/center/board";
+        }
+
+        @GetMapping("board_d")
+        public String board_d(@RequestParam(required=false) String page, Model model){
+                model.addAttribute("page", page);
+                return "contents/center/board_d";
         }
 
         @GetMapping("intro")
