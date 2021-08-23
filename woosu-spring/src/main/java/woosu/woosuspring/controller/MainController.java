@@ -59,4 +59,35 @@ public class MainController {
                 return "contents/recruit/recruit_info";
         }
 
+        @GetMapping("rndintro")
+        public String rndintro(){
+                return "contents/rnd/rndintro";
+        }
+
+        @GetMapping("rndresult")
+        public String rndresult(){
+                return "contents/rnd/rndresult";
+        }
+
+        @GetMapping("rndcerti")
+        public String rndcerti(){
+                return "contents/rnd/rndcerti";
+        }
+
+        @GetMapping("subsidiary")
+        public String subsidiary(){
+                return "contents/about/subsidiary";
+        }
+
+        @GetMapping("locate")
+        public String locate(){
+                return "contents/about/locate";
+        }
+
+
+
+
+
+
+
 }
